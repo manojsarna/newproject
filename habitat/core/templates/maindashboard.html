@@ -1,0 +1,607 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Dashboard {% endblock %} 
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}
+
+{% endblock stylesheets %}
+
+{% block content %}
+
+<style>
+    .img-size-resp{
+        width: 60% !important;
+
+    }
+    .module-text1{
+        color: #CC0066;
+        font-weight: bold;
+    }
+    
+    .module-text2{
+        color: #EA4335;
+        font-weight: bold;
+    }
+    
+    .module-text3{
+        color: #2F9299;
+        font-weight: bold;
+    }
+    
+    .module-text4{
+        color: #CC3300;
+        font-weight: bold;
+    }
+    
+    .module-text5{
+        color: #BC8E03;
+        font-weight: bold;
+    }
+
+    .module-text6{
+        color: #660066;
+        font-weight: bold;
+    }
+    
+    .module-text7{
+        color: #9933FF;
+        font-weight: bold;
+    }
+    .module-text8{
+        color: #34A853;
+        font-weight: bold;
+    }
+    .module-text9{
+        color: #46BDC6;
+        font-weight: bold;
+    }
+    .module-text10{
+        color: #C22114;
+        font-weight: bold;
+    }
+    .module-text11{
+        color: #0070C0;
+        font-weight: bold;
+    }
+    .module-text12{
+        color: #1A5529;
+        font-weight: bold;
+    }
+
+    .circle-progress small span {
+    margin: 0 auto;
+    margin-bottom: 100%;
+ } 
+
+ .btn-module1-danger { 
+    background-color: #CC0066;
+    border-color: #CC0066;
+    color: #fff;
+}
+
+
+.btn-module2-danger {
+     
+    background-color: #EA4335;
+    border-color: #EA4335;
+    color: #fff;
+}
+
+.btn-module3-danger { 
+    background-color: #2F9299;
+    border-color: #2F9299;
+    color: #fff;
+}
+
+.btn-module4-danger { 
+    background-color: #CC3300;
+    border-color: #CC3300;
+    color: #fff;
+}
+
+.btn-module5-danger { 
+    background-color: #BC8E03;
+    border-color: #BC8E03;
+    color: #fff;
+}
+
+.btn-module6-danger { 
+    background-color: #660066;
+    border-color: #660066;
+    color: #fff;
+}
+
+.btn-module7-danger { 
+    background-color: #9933FF;
+    border-color: #9933FF;
+    color: #fff;
+}
+
+.btn-module8-danger { 
+    background-color: #34A853;
+    border-color: #34A853;
+    color: #fff;
+}
+
+.btn-module9-danger { 
+    background-color: #46BDC6;
+    border-color: #46BDC6;
+    color: #fff;
+}
+
+.btn-module10-danger { 
+    background-color: #C22114;
+    border-color: #C22114;
+    color: #fff;
+}
+
+.btn-module11-danger { 
+    background-color: #0070C0;
+    border-color: #0070C0;
+    color: #fff;
+}
+
+.btn-module12-danger { 
+    background-color: #1A5529;
+    border-color: #1A5529;
+    color: #fff;
+}
+</style>
+<div class="app-main__outer">
+                    <div class="app-main__inner">
+                        <div class="app-page-title">
+                            <div class="page-title-wrapper">
+                                <div class="page-title-heading">
+                                    <div class="page-title-icon">
+                                        <i class="pe-7s-monitor icon-gradient bg-mean-fruit">
+                                        </i>
+                                    </div>
+                                    <div> Main Dashboard
+                                        <div class="page-title-subheading">Welcome to the Web-based USAF TOOL operationalised under SCIAP Project.
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="page-title-actions">
+                                    
+                                </div>    </div>
+
+                        </div> 
+						 
+						   
+                         <div class="tabs-animation">
+
+                            <div class="row">
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="widget-chart widget-chart2 text-left mb-3 card-btm-border card-shadow-danger border-danger card">
+                                        <div class="widget-chat-wrapper-outer">
+                                            <div class="widget-chart-content">
+                                                <div class="widget-title   module-text1">1. Urban Form, Public Space and Safety </div>
+                                                <div class="widget-numbers mt-2 fsize-4 mb-0 w-100">
+                                                    <div class="widget-chart-flex align-items-center">
+                                                        <div class="ml-auto" >
+                                                             <img  src="/static/assets/sector-icons/1.png"  class="img-size-resp"/> 
+                                                        </div>
+                                                        
+                                                        <div class="widget-title ml-auto font-size-lg font-weight-normal text-muted">                                                            
+                                                            <div class="circle-progress circle-progress-gradient-lg">
+                                                                <canvas width="64" height="64"></canvas>
+                                                                <small><span>64%<span></span></span></small>
+                                                            </div>
+                                                             
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="text-left">  
+                                                        <a href="/module1_form" class="btn-pill mb-2 mr-2 btn btn-module1-danger btn-sm">> Enter Data for City</a>
+                                                        <a href="/tablesdemo.html" class="btn-pill mb-2 mr-2 btn btn-module1-danger btn-sm">> Customised Reporting</a>
+                                                        <a href="/chartsdemo.html" class="btn-pill mb-2 mr-2 btn btn-module1-danger btn-sm">> Data Visualisation</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="widget-chart widget-chart2 text-left mb-3 card-btm-border card-shadow-warning border-warning card">
+                                        <div class="widget-chat-wrapper-outer">
+                                            <div class="widget-chart-content">
+                                                <div class="widget-title   module-text2">2. Housing & Property <br> &nbsp;</div>
+                                                <div class="widget-numbers mt-2 fsize-4 mb-0 w-100">
+                                                    <div class="widget-chart-flex align-items-center">
+                                                        <div  >
+                                                             <img  src="/static/assets/sector-icons/2.png"  class="img-size-resp"/> 
+                                                        </div>
+                                                        
+                                                        <div class="widget-title ml-auto font-size-lg font-weight-normal text-muted">                                                            
+                                                            <div class="circle-progress circle-progress-gradient-lg">
+                                                                <canvas width="64" height="64"></canvas>
+                                                                <small><span>64%<span></span></span></small>
+                                                            </div>
+                                                             
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="text-left"> 
+                                                        <a href="#" class="btn-pill mb-2 mr-2 btn btn-module2-danger btn-sm">> Enter Data for City</a>
+                                                        <a href="#" class="btn-pill mb-2 mr-2 btn btn-module2-danger btn-sm">> Customised Reporting</a>
+                                                        <a href="#" class="btn-pill mb-2 mr-2 btn btn-module2-danger btn-sm">> Data Visualisation</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="widget-chart widget-chart2 text-left mb-3 card-btm-border card-shadow-danger border-danger card">
+                                        <div class="widget-chat-wrapper-outer">
+                                            <div class="widget-chart-content">
+                                                <div class="widget-title   module-text3">3. Water <br> &nbsp;</div>
+                                                <div class="widget-numbers mt-2 fsize-4 mb-0 w-100">
+                                                    <div class="widget-chart-flex align-items-center">
+                                                        <div  >
+                                                             <img  src="/static/assets/sector-icons/3.png"  class="img-size-resp"/> 
+                                                        </div>
+                                                        
+                                                        <div class="widget-title ml-auto font-size-lg font-weight-normal text-muted">                                                            
+                                                            <div class="circle-progress circle-progress-gradient-lg">
+                                                                <canvas width="64" height="64"></canvas>
+                                                                <small><span>64%<span></span></span></small>
+                                                            </div>
+                                                             
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="text-left"> 
+                                                        <a href="#" class="btn-pill mb-2 mr-2 btn btn-module3-danger btn-sm">> Enter Data for City</a>
+                                                        <a href="#" class="btn-pill mb-2 mr-2 btn btn-module3-danger btn-sm">> Customised Reporting</a>
+                                                        <a href="#" class="btn-pill mb-2 mr-2 btn btn-module3-danger btn-sm">> Data Visualisation</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="widget-chart widget-chart2 text-left mb-3 card-btm-border card-shadow-warning border-warning card">
+                                        <div class="widget-chat-wrapper-outer">
+                                            <div class="widget-chart-content">
+                                                <div class="widget-title   module-text4">4. Sanitation <br> &nbsp;</div>
+                                                <div class="widget-numbers mt-2 fsize-4 mb-0 w-100">
+                                                    <div class="widget-chart-flex align-items-center">
+                                                        <div  >
+                                                             <img  src="/static/assets/sector-icons/4.png"  class="img-size-resp"/> 
+                                                        </div>
+                                                        
+                                                        <div class="widget-title ml-auto font-size-lg font-weight-normal text-muted">                                                            
+                                                            <div class="circle-progress circle-progress-gradient-lg">
+                                                                <canvas width="64" height="64"></canvas>
+                                                                <small><span>64%<span></span></span></small>
+                                                            </div>
+                                                             
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="text-left"> 
+                                                        <a href="#" class="btn-pill mb-2 mr-2 btn btn-module4-danger btn-sm">> Enter Data for City</a>
+                                                        <a href="#" class="btn-pill mb-2 mr-2 btn btn-module4-danger btn-sm">> Customised Reporting</a>
+                                                        <a href="#" class="btn-pill mb-2 mr-2 btn btn-module4-danger btn-sm">> Data Visualisation</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+ 
+                            </div>
+                         
+                        
+                            
+                         
+                            <div class="row">
+                                
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="widget-chart widget-chart2 text-left mb-3 card-btm-border card-shadow-warning border-warning card">
+                                        <div class="widget-chat-wrapper-outer">
+                                            <div class="widget-chart-content">
+                                                <div class="widget-title   module-text5">5. Solid Waste Management <br> &nbsp; </div>
+                                                <div class="widget-numbers mt-2 fsize-4 mb-0 w-100">
+                                                    <div class="widget-chart-flex align-items-center">
+                                                        <div  >
+                                                             <img  src="/static/assets/sector-icons/5.png"  class="img-size-resp"/> 
+                                                        </div>
+                                                        
+                                                        <div class="widget-title ml-auto font-size-lg font-weight-normal text-muted">                                                            
+                                                            <div class="circle-progress circle-progress-gradient-lg">
+                                                                <canvas width="64" height="64"></canvas>
+                                                                <small><span>64%<span></span></span></small>
+                                                            </div>
+                                                             
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="text-left"> 
+                                                        <a href="#" class="btn-pill mb-2 mr-2 btn btn-module5-danger btn-sm">> Enter Data for City</a>
+                                                        <a href="#" class="btn-pill mb-2 mr-2 btn btn-module5-danger btn-sm">> Customised Reporting</a>
+                                                        <a href="#" class="btn-pill mb-2 mr-2 btn btn-module5-danger btn-sm">> Data Visualisation</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="widget-chart widget-chart2 text-left mb-3 card-btm-border card-shadow-danger border-danger card">
+                                        <div class="widget-chat-wrapper-outer">
+                                            <div class="widget-chart-content">
+                                                <div class="widget-title   module-text6">6. Transportation <br> &nbsp;</div>
+                                                <div class="widget-numbers mt-2 fsize-4 mb-0 w-100">
+                                                    <div class="widget-chart-flex align-items-center">
+                                                        <div  >
+                                                             <img  src="/static/assets/sector-icons/6.png"  class="img-size-resp"/> 
+                                                        </div>
+                                                        
+                                                        <div class="widget-title ml-auto font-size-lg font-weight-normal text-muted">                                                            
+                                                            <div class="circle-progress circle-progress-gradient-lg">
+                                                                <canvas width="64" height="64"></canvas>
+                                                                <small><span>64%<span></span></span></small>
+                                                            </div>
+                                                             
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="text-left"> 
+                                                        <a href="#" class="btn-pill mb-2 mr-2 btn btn-module6-danger btn-sm">> Enter Data for City</a>
+                                                        <a href="#" class="btn-pill mb-2 mr-2 btn btn-module6-danger btn-sm">> Customised Reporting</a>
+                                                        <a href="#" class="btn-pill mb-2 mr-2 btn btn-module6-danger btn-sm">> Data Visualisation</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="widget-chart widget-chart2 text-left mb-3 card-btm-border card-shadow-danger border-danger card">
+                                        <div class="widget-chat-wrapper-outer">
+                                            <div class="widget-chart-content">
+                                                <div class="widget-title   module-text7">7. Social Facilities and Services <br> &nbsp;</div>
+                                                <div class="widget-numbers mt-2 fsize-4 mb-0 w-100">
+                                                    <div class="widget-chart-flex align-items-center">
+                                                        <div  >
+                                                             <img  src="/static/assets/sector-icons/7.png"  class="img-size-resp"/> 
+                                                        </div>
+                                                        
+                                                        <div class="widget-title ml-auto font-size-lg font-weight-normal text-muted">                                                            
+                                                            <div class="circle-progress circle-progress-gradient-lg">
+                                                                <canvas width="64" height="64"></canvas>
+                                                                <small><span>64%<span></span></span></small>
+                                                            </div>
+                                                             
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="text-left"> 
+                                                        <a href="#" class="btn-pill mb-2 mr-2 btn btn-module7-danger btn-sm">> Enter Data for City</a>
+                                                        <a href="#" class="btn-pill mb-2 mr-2 btn btn-module7-danger btn-sm">> Customised Reporting</a>
+                                                        <a href="#" class="btn-pill mb-2 mr-2 btn btn-module7-danger btn-sm">> Data Visualisation</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="widget-chart widget-chart2 text-left mb-3 card-btm-border card-shadow-warning border-warning card">
+                                        <div class="widget-chat-wrapper-outer">
+                                            <div class="widget-chart-content">
+                                                <div class="widget-title   module-text8">8. Environment & Ecology <br> &nbsp;</div>
+                                                <div class="widget-numbers mt-2 fsize-4 mb-0 w-100">
+                                                    <div class="widget-chart-flex align-items-center">
+                                                        <div  >
+                                                             <img  src="/static/assets/sector-icons/8.png"  class="img-size-resp"/> 
+                                                        </div>
+                                                        
+                                                        <div class="widget-title ml-auto font-size-lg font-weight-normal text-muted">                                                            
+                                                            <div class="circle-progress circle-progress-gradient-lg">
+                                                                <canvas width="64" height="64"></canvas>
+                                                                <small><span>64%<span></span></span></small>
+                                                            </div>
+                                                             
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="text-left"> 
+                                                        <a href="#" class="btn-pill mb-2 mr-2 btn btn-module8-danger btn-sm">> Enter Data for City</a>
+                                                        <a href="#" class="btn-pill mb-2 mr-2 btn btn-module8-danger btn-sm">> Customised Reporting</a>
+                                                        <a href="#" class="btn-pill mb-2 mr-2 btn btn-module8-danger btn-sm">> Data Visualisation</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+ 
+                            </div>
+                         
+                            
+                            <div class="row">
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="widget-chart widget-chart2 text-left mb-3 card-btm-border card-shadow-danger border-danger card">
+                                        <div class="widget-chat-wrapper-outer">
+                                            <div class="widget-chart-content">
+                                                <div class="widget-title   module-text9">9. Clean Energy <br> &nbsp; </div>
+                                                <div class="widget-numbers mt-2 fsize-4 mb-0 w-100">
+                                                    <div class="widget-chart-flex align-items-center">
+                                                        <div  >
+                                                             <img  src="/static/assets/sector-icons/9.png"  class="img-size-resp"/> 
+                                                        </div>
+                                                        
+                                                        <div class="widget-title ml-auto font-size-lg font-weight-normal text-muted">                                                            
+                                                            <div class="circle-progress circle-progress-gradient-lg">
+                                                                <canvas width="64" height="64"></canvas>
+                                                                <small><span>64%<span></span></span></small>
+                                                            </div>
+                                                             
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="text-left"> 
+                                                        <a href="#" class="btn-pill mb-2 mr-2 btn btn-module9-danger btn-sm">> Enter Data for City</a>
+                                                        <a href="#" class="btn-pill mb-2 mr-2 btn btn-module9-danger btn-sm">> Customised Reporting</a>
+                                                        <a href="#" class="btn-pill mb-2 mr-2 btn btn-module9-danger btn-sm">> Data Visualisation</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="widget-chart widget-chart2 text-left mb-3 card-btm-border card-shadow-warning border-warning card">
+                                        <div class="widget-chat-wrapper-outer">
+                                            <div class="widget-chart-content">
+                                                <div class="widget-title   module-text10">10. Disaster Risk Management <br> &nbsp; </div>
+                                                <div class="widget-numbers mt-2 fsize-4 mb-0 w-100">
+                                                    <div class="widget-chart-flex align-items-center">
+                                                        <div  >
+                                                             <img  src="/static/assets/sector-icons/10.png"  class="img-size-resp"/> 
+                                                        </div>
+                                                        
+                                                        <div class="widget-title ml-auto font-size-lg font-weight-normal text-muted">                                                            
+                                                            <div class="circle-progress circle-progress-gradient-lg">
+                                                                <canvas width="64" height="64"></canvas>
+                                                                <small><span>64%<span></span></span></small>
+                                                            </div>
+                                                             
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="text-left"> 
+                                                        <a href="#" class="btn-pill mb-2 mr-2 btn btn-module10-danger btn-sm">> Enter Data for City</a>
+                                                        <a href="#" class="btn-pill mb-2 mr-2 btn btn-module10-danger btn-sm">> Customised Reporting</a>
+                                                        <a href="#" class="btn-pill mb-2 mr-2 btn btn-module10-danger btn-sm">> Data Visualisation</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="widget-chart widget-chart2 text-left mb-3 card-btm-border card-shadow-danger border-danger card">
+                                        <div class="widget-chat-wrapper-outer">
+                                            <div class="widget-chart-content">
+                                                <div class="widget-title   module-text11">11. Governance and Data Management </div>
+                                                <div class="widget-numbers mt-2 fsize-4 mb-0 w-100">
+                                                    <div class="widget-chart-flex align-items-center">
+                                                        <div  >
+                                                             <img  src="/static/assets/sector-icons/11.png"  class="img-size-resp"/> 
+                                                        </div>
+                                                        
+                                                        <div class="widget-title ml-auto font-size-lg font-weight-normal text-muted">                                                            
+                                                            <div class="circle-progress circle-progress-gradient-lg">
+                                                                <canvas width="64" height="64"></canvas>
+                                                                <small><span>64%<span></span></span></small>
+                                                            </div>
+                                                             
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="text-left"> 
+                                                        <a href="#" class="btn-pill mb-2 mr-2 btn btn-module11-danger btn-sm">> Enter Data for City</a>
+                                                        <a href="#" class="btn-pill mb-2 mr-2 btn btn-module11-danger btn-sm">> Customised Reporting</a>
+                                                        <a href="#" class="btn-pill mb-2 mr-2 btn btn-module11-danger btn-sm">> Data Visualisation</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="widget-chart widget-chart2 text-left mb-3 card-btm-border card-shadow-warning border-warning card">
+                                        <div class="widget-chat-wrapper-outer">
+                                            <div class="widget-chart-content">
+                                                <div class="widget-title   module-text12">12. Finance & Economy <br> &nbsp;</div>
+                                                <div class="widget-numbers mt-2 fsize-4 mb-0 w-100">
+                                                    <div class="widget-chart-flex align-items-center">
+                                                        <div  >
+                                                             <img  src="/static/assets/sector-icons/12.png"  class="img-size-resp"/> 
+                                                        </div>
+                                                        
+                                                        <div class="widget-title ml-auto font-size-lg font-weight-normal text-muted">                                                            
+                                                            <div class="circle-progress circle-progress-gradient-lg">
+                                                                <canvas width="64" height="64"></canvas>
+                                                                <small><span>64%<span></span></span></small>
+                                                            </div>
+                                                             
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="text-left"> 
+                                                        <a href="#" class="btn-pill mb-2 mr-2 btn btn-module12-danger btn-sm">> Enter Data for City</a>
+                                                        <a href="#" class="btn-pill mb-2 mr-2 btn btn-module12-danger btn-sm">> Customised Reporting</a>
+                                                        <a href="#" class="btn-pill mb-2 mr-2 btn btn-module12-danger btn-sm">> Data Visualisation</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+ 
+                            </div>
+                         
+                        
+                     
+                         
+                         
+                    </div>
+					</div>
+                    <div class="app-wrapper-footer">
+                        <div class="app-footer">
+                            <div class="app-footer__inner">
+                                <div class="app-footer-left">
+                                    <ul class="nav">
+                                        <li class="nav-item">
+                                            <a href="javascript:void(0);" class="nav-link">
+                                                Footer Link 1
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="javascript:void(0);" class="nav-link">
+                                                Footer Link 2
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="app-footer-right">
+                                    <ul class="nav">
+                                        <li class="nav-item">
+                                            <a href="javascript:void(0);" class="nav-link">
+                                                Footer Link 3
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="javascript:void(0);" class="nav-link">
+                                                <div class="badge badge-success mr-1 ml-0">
+                                                    <small>NEW</small>
+                                                </div>
+                                                Footer Link 4
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    </div>
+                 
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
+{% endblock javascripts %}

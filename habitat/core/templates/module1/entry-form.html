@@ -1,0 +1,317 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Dashboard {% endblock %} 
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}
+
+{% endblock stylesheets %}
+
+{% block content %}
+ 
+<div class="app-main__outer">
+                    <div class="app-main__inner">
+                        <div class="row">
+                            <div class="col-lg-6 col-xl-3">
+                                <div class="card mb-3 widget-content">
+                                    <div class="widget-content-outer">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Total No. of Data Points</div>
+                                                <div class="widget-subheading"> </div>
+                                            </div>
+                                            <div class="widget-content-right">
+                                                <div class="widget-numbers text-success">17</div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-progress-wrapper">
+                                            <div class="progress-bar-xs progress">
+                                                <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 5%;"></div>
+                                            </div>
+                                            <div class="progress-sub-label">
+                                                <div class="sub-label-left">To be Completed</div>
+                                                <div class="sub-label-right">100%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-xl-3">
+                                <div class="card mb-3 widget-content">
+                                    <div class="widget-content-outer">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Filled Data Points </div>
+                                                <!-- <div class="widget-subheading"></div> -->
+                                            </div>
+                                            <div class="widget-content-right">
+                                                <div class="widget-numbers text-primary">2</div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-progress-wrapper">
+                                            <div class="progress-bar-xs progress-bar-animated progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100" style="width: 12%;"></div>
+                                            </div>
+                                            <div class="progress-sub-label">
+                                                <div class="sub-label-left">Answered</div>
+                                                <div class="sub-label-right">12%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-xl-3">
+                                <div class="card mb-3 widget-content">
+                                    <div class="widget-content-outer">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Pending Data Points</div>
+                                                <!--<div class="widget-subheading">Total revenue streams</div> -->
+                                            </div>
+                                            <div class="widget-content-right">
+                                                <div class="widget-numbers text-warning">15</div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-progress-wrapper">
+                                            <div class="progress-bar-xs progress-bar-animated-alt progress">
+                                                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" style="width: 88%;">
+                                                </div>
+                                            </div>
+                                            <div class="progress-sub-label">
+                                                <div class="sub-label-left">Not Answered yet</div>
+                                                <div class="sub-label-right">88%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="col-lg-6 col-xl-3">
+                                <div class="card mb-3 widget-content">
+                                    <div class="widget-content-outer">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Total Indicators</div>
+                                                <div class="widget-subheading">in this Module</div>
+                                            </div>
+                                            <div class="widget-content-right">
+                                                <div class="widget-numbers text-danger">9</div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-progress-wrapper">
+                                            <div class="progress-bar-sm progress-bar-animated-alt progress">
+                                                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+                                                </div>
+                                            </div>
+                                            <div class="progress-sub-label">
+                                                <div class="sub-label-left">Overall Progress</div>
+                                                <div class="sub-label-right">10%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+                        
+						 
+                        <div class="app-inner-layout__wrapper">
+
+ 
+                                        
+                        <form action="" method="POST" enctype="multipart/form-data">
+                            {% csrf_token %}
+                             <div class="mb-3 card">
+                                <div class="card-header-tab card-header">
+                                    <div class="card-header-title font-size-lg text-capitalize font-weight-normal">
+                                        <i class="header-icon lnr-charts icon-gradient bg-happy-green"> </i>
+                                        <h4>Module 1: Urban Form, Public Space and Safety </h4>
+                                    </div>
+                                    <!-- <div class="btn-actions-pane-right text-capitalize">
+                                        <button class="btn-wide btn-outline-2x mr-md-2 btn btn-outline-focus btn-sm">GENERAL
+                                            SAVE</button>
+                                    </div> -->
+                                </div>
+            
+                                <div class="no-gutters">  
+                                    <div id="accordion" class="accordion-wrapper"> 
+                                        {% for i in data %} 
+                                        <div class="card ">
+                                            <div id="headingOne" class="card-header">
+                                                <button type="button" data-toggle="collapse" data-target="#collapseOne{{forloop.counter}}"
+                                                    aria-expanded="false" aria-controls="collapseOne"
+                                                    class="text-left m-0 p-0 btn btn-link btn-block collapsed">
+                                                    <h5 class="m-0 p-0"> <i class="fa fa-angle-down rotate-icon"> </i>
+
+                                                        {{i.no}} {{i.indicator}} 
+                                                        <div class="mb-2 mr-2 badge 
+                                                        {% if i.category == 'Primary' %} badge-primary  {% elif i.category == 'Tertiary' %} badge-info {% elif i.category == 'Secondary' %} badge-success  {% endif %}
+                                                        
+                                                        ">
+                                                            {{i.category}}
+                                                        </div>
+                                                        
+                                                        <div class="mb-2 mr-2 badge badge-pill 
+                                                        {% if i.typeofindicator == 'Non-Spatial' %}
+                                                         badge-warning 
+                                                         {% elif i.typeofindicator == 'Spatial' %} badge-danger
+
+                                                         {% endif %}
+                                                         ">
+                                                         {{i.typeofindicator}} </div> 
+                                                    
+                                                    </h5>
+                                                </button>
+                                            </div>  
+
+
+                                            <div data-parent="#accordion" id="collapseOne{{forloop.counter}}" aria-labelledby="headingOne"
+                                                class="collapse" style="">
+                                                <div class="card-body ">
+            
+                                                    <div class="table-responsive">
+            
+                                                        <table class="table table-padded table-striped table-xl mb-0  ">
+                                                            <thead class="bg-danger text-white">
+                                                                <tr>
+                                                                    <th width="50%">Description</th>
+                                                                    <th width="20%">Response</th>
+                                                                    <th width="25%">Remarks</th>
+                                                                    <th width="5%"> Document</th>
+                                                                </tr>
+                                                            </thead>
+
+
+
+                                                            <tbody class="tbody">
+                                                                {% for k in i.datapoint %}
+
+                                                                <tr class="">
+     
+                                                                <td>     
+                                                                  {{k.point_desc}}
+                                                                        <span data-tip="Approved" class="green">
+                                                                            <i class="ft-check-square 2x success"></i>
+                                                                        </span> 
+                                                                    </td>
+                                                                    <td>
+                                                                        
+                                                                    {% if k.input_type == 'select' %}
+
+                                                                    <select class="form-control" name="p_{{k.indicator}}{{k.p_id}}"  id="p_{{k.indicator}}{{k.p_id}}">
+                                                                        <option {% if k.point_value == 'Poor' %}selected {%endif%}>Poor</option>
+                                                                        <option {% if k.point_value == 'Fair' %}selected {%endif%}>Fair</option>
+                                                                        <option {% if k.point_value == 'Good' %}selected {%endif%}>Good</option>
+                                                                    </select>
+
+                                                                    {% else %}
+                                                                    <input type="number" name="p_{{k.indicator}}{{k.p_id}}"  id="p_{{k.indicator}}{{k.p_id}}" value="{{k.point_value}}" class="form-control" />
+                                                                    
+                                                                    {% endif %}
+
+                                                                    </td> 
+
+                                                                    <td>    
+
+                                                                    <input type="text" name="r_{{k.indicator}}{{k.p_id}}"  id="r_{{k.indicator}}{{k.p_id}}" value="{{k.point_remark}}" class="form-control" />
+
+                                                                    </td>
+
+
+                                                                    <td>
+
+                                                                      
+                                                                      <input type="file" name="f_{{k.indicator}}{{k.p_id}}"  id="f_{{k.indicator}}{{k.p_id}}" value="{{k.point_attach}}"  />
+                                                                        
+                                                                      {% if k.point_attach %}
+                                                                         
+                                                                      <a href="module1/{{k.point_attach}}" download=""> download</a>
+
+                                                                      {% endif %}
+
+                                                                         
+                                                                    </td>
+            
+                                                                </tr>
+            
+                                                                {% endfor %}
+            
+            
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+            
+            
+            
+            
+                                                </div>
+            
+            
+                                            </div>
+                                        </div>
+            
+
+
+   
+                                        
+                                        {% endfor %}
+
+                                    </div>
+            
+            
+                                </div>
+                                <div class="text-center d-block p-3 card-footer">
+                                    <button class="btn-pill btn-shadow btn-wide fsize-1 btn btn-primary btn-lg">
+                                        <span class="mr-1">Submit</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>              
+            
+                        </div>
+					</div>
+                    <div class="app-wrapper-footer">
+                        <div class="app-footer">
+                            <div class="app-footer__inner">
+                                <div class="app-footer-left">
+                                    <ul class="nav">
+                                        <li class="nav-item">
+                                            <a href="javascript:void(0);" class="nav-link">
+                                                Footer Link 1
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="javascript:void(0);" class="nav-link">
+                                                Footer Link 2
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="app-footer-right">
+                                    <ul class="nav">
+                                        <li class="nav-item">
+                                            <a href="javascript:void(0);" class="nav-link">
+                                                Footer Link 3
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="javascript:void(0);" class="nav-link">
+                                                <div class="badge badge-success mr-1 ml-0">
+                                                    <small>NEW</small>
+                                                </div>
+                                                Footer Link 4
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    </div>
+                 
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
+{% endblock javascripts %}

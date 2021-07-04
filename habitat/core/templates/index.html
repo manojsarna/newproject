@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+
+
+<!-- Mirrored from demo.dashboardpack.com/architectui-html-pro/forms-wizard.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 May 2021 14:05:54 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>USAF Tool Wizard </title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="Easily create beautiful form multi step wizards!">
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <link href="/static/main.css" rel="stylesheet"> 
+
+</head>     
+<body>
+    <div class="app-main"> 			
+       <div class="app-main__outer">
+           <div class="app-main__inner container">               
+                       <div class="row  ">
+                           <div class="col-lg-12  col-md-12">                           
+                            <h1 class="text-center"> Please fill initial information about the City as per Year selected for assessment</h1>
+                            
+                            <form action="/maindashboard" method="POST" >
+                                {% csrf_token %}  
+                                <input name="total"  type="hidden" id="total" value="{% if obj %}1{% else %}0{% endif %}"/>
+                               
+                               <div class="main-card mb-3 card">
+                                   <div class="card-body">
+                                       <div id="smartwizard">
+                                           <ul class="forms-wizard">
+                                               <li>
+                                                   <a href="#step-1">
+                                                       <em>1</em><span>Select City/ Year</span>
+                                                   </a>
+                                               </li>
+                                               <li>
+                                                   <a href="#step-2">
+                                                       <em>2</em><span>Enter Latest Data</span>
+                                                   </a>
+                                               </li>
+                                               <li>
+                                                <a href="#step-3">
+                                                    <em>3</em><span>Enter Census 2011 Data</span>
+                                                </a>
+                                            </li>
+                                               
+                                               <li>
+                                                <a href="#step-4">
+                                                    <em>4</em><span>Finish Setup </span>
+                                                </a>
+                                            </li>
+                                           </ul>
+                                           
+                                           
+                                           <div class="form-wizard-content">
+                                               <div id="step-1">
+                                                   <div class="form-row">
+                                                       <div class="col-md-6">
+                                                           <div class="position-relative form-group">
+                                                               <label for="exampleEmail55">City</label>
+                                                               <select class="form-control" name="city" id="city" value="{{obj.city}}" onchange="changevalue()">
+                                                             
+                                                                
+
+                                                              {% for o in ucity %}
+                                                                <option  {% if city == o.city_name %}selected {%endif%}> {{o.city_name}} </option>
+                                                                
+                                                               {%endfor%}
+
+                                                               </select>
+                                                           </div>
+                                                       </div>
+                                                       <div class="col-md-6">
+                                                           <div class="position-relative form-group">
+                                                               <label for="examplePassword22">Year</label>
+                                                               <select class="form-control" name="year" id="year" value="{{obj.year}}" >
+                                                                {% for o in year %}
+                                                                
+                                                                <option {% if syear == o %}selected {%endif%}>{{o}}</option>
+                                                                 
+                                                                {%endfor%}
+                                                                 
+                                                                </select>
+                                                           </div>
+                                                       </div>
+                                                   </div>
+                                                  
+                                               </div>
+                                               <div id="step-2">
+                                                   <div id="accordion" class="accordion-wrapper mb-3">
+                                                       <div class="card">
+                                                           <div id="headingOne" class="card-header">
+                                                               <button type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                                                                   aria-controls="collapseOne" class="text-left m-0 p-0 btn btn-link btn-block">
+                                                                   <span class="form-heading">Details on city demographics  2019 </p></span>
+                                                               </button>
+                                                           </div>
+                                                           <div data-parent="#accordion" id="collapseOne" aria-labelledby="headingOne" class="collapse show">
+                                                               <div class="card-body">
+                                                                   <div class="form-row">
+                                                                       <div class="col-md-4">
+                                                                           <div class="position-relative form-group">
+                                                                               <label for="exampleEmail2">Population of the city in 2019 </label>
+                                                                               <input  type="text" name="demo_1"  id="demo_1"   value="{{obj.demo_1}}" autocomplete="off"   placeholder="  " class="form-control">
+                                                                           </div>
+                                                                       </div>
+                                                                       <div class="col-md-4">
+                                                                           <div class="position-relative form-group">
+                                                                               <label for="examplePassword">Number of Households in the city</label>
+                                                                               <input  name="demo_2"  id="demo_2"value="{{obj.demo_2}}" autocomplete="off"    placeholder=" " type="text" class="form-control">
+                                                                           </div>
+                                                                       </div>
+                                                                       <div class="col-md-4">
+                                                                       <div class="position-relative form-group">
+                                                                        <label for="exampleAddress">
+                                                                         Number of properties registered in the city</label>
+                                                                        <input  name="demo_3"  id="demo_3"  value="{{obj.demo_3}}"  autocomplete="off"    placeholder=" " type="text" class="form-control">
+                                                                    </div>
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                    <div class="position-relative form-group">
+                                                                        <label for="exampleAddress2">
+                                                                         Number of properties as per city GIS database</label>
+                                                                        <input  name="demo_4"  id="demo_4"    value="{{obj.demo_4}}"  autocomplete="off"    placeholder=" " type="text" class="form-control">
+                                                                    </div>
+                                                                    </div>
+                                                                    
+                                                                       <div class="col-md-4">
+                                                                           <div class="position-relative form-group">
+                                                                               <label for="exampleCity">
+                                                                                Area of the city under ULB jurisdiction in 2019</label>
+                                                                               <input  name="demo_5"  id="demo_5" value="{{obj.demo_5}}"  autocomplete="off"   type="text" class="form-control">
+                                                                           </div>
+                                                                       </div>
+                                                                       <div class="col-md-4">
+                                                                           <div class="position-relative form-group">
+                                                                               <label for="exampleState">Built up area in the city in 2019</label>
+                                                                               <input  name="demo_6"  id="demo_6"   value="{{obj.demo_6}}"  autocomplete="off"    type="text" class="form-control">
+                                                                           </div>
+                                                                       </div>
+                                                                       <div class="col-md-4">
+                                                                           <div class="position-relative form-group">
+                                                                               <label for="exampleZip">
+                                                                                Number of wards in the city in 2019</label>
+                                                                               <input  name="demo_7"  id="demo_7"  value="{{obj.demo_7}}"  autocomplete="off"    type="text" class="form-control">
+                                                                           </div>
+                                                                       </div>
+                                                                   </div>
+                                                               </div>
+                                                           </div>
+                                                       </div>
+                                                   </div>
+                                               </div>
+
+                                               <div id="step-3">
+                                                   <div id="accordion" class="accordion-wrapper mb-3">
+                                                       <div class="card">
+                                                        <div id="headingOne" class="card-header">
+                                                            <button type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                                                                aria-controls="collapseOne" class="text-left m-0 p-0 btn btn-link btn-block">
+                                                                <span class="form-heading">Details on city demographics  2011</p></span>
+                                                            </button>
+                                                        </div>
+                                                        <div data-parent="#accordion" id="collapseOne" aria-labelledby="headingOne" class="collapse show">
+                                                            <div class="card-body">
+                                                                <div class="form-row">
+                                                                    <div class="col-md-4">
+                                                                        <div class="position-relative form-group">
+                                                                            <label for="exampleEmail2">Population of the city in 2011
+                                                                            </label>
+                                                                            <input name="demo_8"  id="demo_8"  value="{{obj.demo_8}}"  type="text" class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                    <div class="col-md-4">
+                                                                        <div class="position-relative form-group">
+                                                                            <label for="exampleEmail2">Number of Households in 2011
+                                                                            </label>
+                                                                            <input name="demo_9"  id="demo_9"   value="{{obj.demo_9}}"  type="text" class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                    <div class="col-md-4">
+                                                                        <div class="position-relative form-group">
+                                                                            <label for="exampleEmail2">Male Population residing in the city
+                                                                            </label>
+                                                                            <input name="demo_10"  id="demo_10"  value="{{obj.demo_10}}" type="text" class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                    <div class="col-md-4">
+                                                                        <div class="position-relative form-group">
+                                                                            <label for="exampleEmail2">Female Population residing in the city
+                                                                            </label>
+                                                                            <input name="demo_11"  id="demo_11"   value="{{obj.demo_11}}" type="text" class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                    <div class="col-md-4">
+                                                                        <div class="position-relative form-group">
+                                                                            <label for="exampleEmail2">Number of females age 7 and above in the ULB
+                                                                            </label>
+                                                                            <input name="demo_12"  id="demo_12"  value="{{obj.demo_12}}" type="text" class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                    <div class="col-md-4">
+                                                                        <div class="position-relative form-group">
+                                                                            <label for="exampleEmail2">Number of literate females age 7 and above in the ULB
+                                                                            </label>
+                                                                            <input name="demo_13"  id="demo_13"   value="{{obj.demo_13}}" type="text" class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                    <div class="col-md-4">
+                                                                        <div class="position-relative form-group">
+                                                                            <label for="exampleEmail2">Number of people aged 0-14 residing within ULB
+                                                                            </label>
+                                                                            <input name="demo_14"  id="demo_14"  value="{{obj.demo_14}}"  type="text" class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                    <div class="col-md-4">
+                                                                        <div class="position-relative form-group">
+                                                                            <label for="exampleEmail2">Number of people aged 15-64 residing within ULB
+                                                                            </label>
+                                                                            <input name="demo_15"  id="demo_15"   value="{{obj.demo_15}}" type="text" class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                    <div class="col-md-4">
+                                                                        <div class="position-relative form-group">
+                                                                            <label for="exampleEmail2">Number of people aged 65 and above residing within ULB
+                                                                            </label>
+                                                                            <input name="demo_16"  id="demo_16"   value="{{obj.demo_16}}" type="text" class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                    <div class="col-md-4">
+                                                                        <div class="position-relative form-group">
+                                                                            <label for="exampleEmail2">Population of the city in 2001
+                                                                            </label>
+                                                                            <input name="demo_17"  id="demo_17"   value="{{obj.demo_17}}" type="text" class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                    <div class="col-md-4">
+                                                                        <div class="position-relative form-group">
+                                                                            <label for="exampleEmail2">Population of the city in 1991
+                                                                            </label>
+                                                                            <input name="demo_18"  id="demo_18"   value="{{obj.demo_18}}" type="text" class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                    <div class="col-md-4">
+                                                                        <div class="position-relative form-group">
+                                                                            <label for="exampleEmail2">Projected Population for the city in 2021
+                                                                            </label>
+                                                                            <input name="demo_19"  id="demo_19"  value="{{obj.demo_19}}"  type="text" class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    
+
+                                                                    <div class="col-md-4">
+                                                                        <div class="position-relative form-group">
+                                                                            <label for="exampleEmail2">Projected Population for the city in 2031
+                                                                            </label>
+                                                                            <input name="demo_20"  id="demo_20"   value="{{obj.demo_20}}" type="text" class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div> 
+                                                   </div>
+                                               </div>
+
+                                               <div id="step-4">
+                                                   <div class="no-results">
+                                                       <div class="swal2-icon swal2-success swal2-animate-success-icon">
+                                                           <div class="swal2-success-circular-line-left" style="background-color: rgb(255, 255, 255);"></div>
+                                                           <span class="swal2-success-line-tip"></span>
+                                                           <span class="swal2-success-line-long"></span>
+                                                           <div class="swal2-success-ring"></div>
+                                                           <div class="swal2-success-fix" style="background-color: rgb(255, 255, 255);"></div>
+                                                           <div class="swal2-success-circular-line-right" style="background-color: rgb(255, 255, 255);"></div>
+                                                       </div>
+                                                       <div class="results-subtitle mt-4">Finished!</div>
+                                                       <div class="results-title">Thanks for providing initial data about your City and Assessment Year </div>
+                                                       <div class="mt-3 mb-3"></div>      
+                                                       <div class="text-center">
+                                                           <button class="btn-shadow btn-wide btn btn-success btn-lg">Finish</button>
+                                                       </div>
+                                                     
+                                                   </div>
+                                               </div>
+                                           </div>
+                                    
+                                       </div>
+                                       <div class="divider"></div>
+                                       <div class="clearfix">
+                                           <button type="button" id="reset-btn" class="btn-shadow float-left btn btn-link">Reset</button>
+                                           <button type="button" id="next-btn" class="btn-shadow btn-wide float-right btn-pill btn-hover-shine btn btn-primary">Next</button>
+                                           <button type="button" id="prev-btn" class="btn-shadow float-right btn-wide btn-pill mr-3 btn btn-outline-secondary">Previous</button>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                        </form>
+                                   
+                               </div>
+                               
+                               
+                           </div>
+                       
+                   
+                
+                               
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+         
+                   
+               </div>
+           </div></div>
+   </div>
+</div>
+ 
+   
+        
+          
+   </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="/static/assets/scripts/main.js"></script>
+
+
+</body>
+
+
+    <script>
+  
+        function changevalue() {
+            
+// var city = document.querySelector('#city');
+// var year = document.querySelector('#year');  
+   
+var city = $('#city').val();
+var year = $('#year').val();  
+ 
+           data={city,year}
+          
+          $.ajax({
+            type: 'GET',
+            url: "{% url 'getdemoInfo' %}",
+            dataType: 'json',
+            async: false,
+            data: data,
+            success: function (response) { 
+                console.log(response) 
+                 var obj=response.obj
+               
+                if (obj.length>0){
+                     
+                    $("#total").val(1)
+                    $("#demo_1").val(obj[0].demo_1)
+                    $("#demo_2").val(obj[0].demo_2)
+                    $("#demo_3").val(obj[0].demo_3)
+                    $("#demo_4").val(obj[0].demo_4)
+                    $("#demo_5").val(obj[0].demo_5)
+                    $("#demo_6").val(obj[0].demo_6)
+                    $("#demo_7").val(obj[0].demo_7)
+                    $("#demo_8").val(obj[0].demo_8)
+                    $("#demo_9").val(obj[0].demo_9)
+                    $("#demo_10").val(obj[0].demo_10)
+                    $("#demo_11").val(obj[0].demo_11)
+                    $("#demo_12").val(obj[0].demo_12)
+                    $("#demo_13").val(obj[0].demo_13)
+                    $("#demo_14").val(obj[0].demo_14)
+                    $("#demo_15").val(obj[0].demo_15)
+                    $("#demo_16").val(obj[0].demo_16)
+                    $("#demo_17").val(obj[0].demo_17)
+                    $("#demo_18").val(obj[0].demo_18)                    
+                    $("#demo_19").val(obj[0].demo_19)                    
+                    $("#demo_20").val(obj[0].demo_20)
+
+
+                }
+                else{
+
+                  
+                    $("#total").val(0)
+                    $("#demo_1").val(" ")
+                    $("#demo_2").val(" ")
+                    $("#demo_3").val(" ")
+                    $("#demo_4").val(" ")
+                    $("#demo_5").val(" ")
+                    $("#demo_6").val(" ")
+                    $("#demo_7").val(" ")
+                    $("#demo_8").val(" ")
+                    $("#demo_9").val(" ")
+                    $("#demo_10").val(" ")
+                    $("#demo_11").val(" ")
+                    $("#demo_12").val(" ")
+                    $("#demo_13").val(" ")
+                    $("#demo_14").val(" ")
+                    $("#demo_15").val(" ")
+                    $("#demo_16").val(" ")
+                    $("#demo_17").val(" ")
+                    $("#demo_18").val(" ")                    
+                    $("#demo_19").val(" ")                    
+                    $("#demo_20").val(" ")
+
+
+                }
+              
+
+              
+
+
+            }
+          })
+      
+        }
+          
+      
+      </script>
+      
+<!-- Mirrored from demo.dashboardpack.com/architectui-html-pro/forms-wizard.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 May 2021 14:05:54 GMT -->
+</html>

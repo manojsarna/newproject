@@ -1,0 +1,1343 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Urban Form </title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+    <meta name="msapplication-tap-highlight" content="no">
+    <!--
+    =========================================================
+    * ArchitectUI HTML Theme Dashboard - v1.0.0
+    =========================================================
+    * Product Page: https://dashboardpack.com
+    * Copyright 2019 DashboardPack (https://dashboardpack.com)
+    * Licensed under MIT (https://github.com/DashboardPack/architectui-html-theme-free/blob/master/LICENSE)
+    =========================================================
+    * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+    -->
+    <link href="./main.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic"
+                            data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button"
+                        class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>
+
+            <div class="app-header__content">
+                <div class="app-header-left">
+                    <!-- <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
+                        </div>
+                        <button class="close"></button>
+                    </div>-->
+
+                    <ul class="header-megamenu nav">
+
+
+                        <li class="btn-group nav-item">
+                            <a class="nav-link" href="dashboard-2.html">
+                                <i class="nav-link-icon pe-7s-display2"> </i> USAF Dashboard
+                                <!-- <i class="fa fa-angle-down ml-2 opacity-5"></i> -->
+                            </a>
+
+                            <!--<div tabindex="-1" role="menu" aria-hidden="true" class="rm-pointers dropdown-menu" style=""> 
+                                <div class="scroll-area-xs">
+                                    <div class="scrollbar-container ps"> 
+                                        <button type="button" tabindex="0" class="dropdown-item"><i class="dropdown-icon lnr-file-empty"></i>Dashboard1</button>
+                                        <button type="button" tabindex="0" class="dropdown-item"><i class="dropdown-icon lnr-file-empty"></i>Dashboard2</button>
+                                        <button type="button" tabindex="0" class="dropdown-item"><i class="dropdown-icon lnr-file-empty"></i>Dashboard3</button>
+										 
+									</div>
+                                </div>
+                                
+                            </div>-->
+
+
+                        </li>
+                        <li class="btn-group nav-item">
+                            <a class="nav-link" href="dashboard-1.html">
+                                <i class="nav-link-icon pe-7s-display2"> </i>Module Dashboard
+                                <!-- <i class="fa fa-angle-down ml-2 opacity-5"></i> -->
+                            </a>
+
+                        </li>
+                        <li class="btn-group nav-item">
+                            <a href="#" class="nav-link" data-toggle="dropdown" aria-expanded="false">
+                                <i class="nav-link-icon pe-7s-display2"> </i>Scoring and Reporting
+                                <i class="fa fa-angle-down ml-2 opacity-5"></i>
+                            </a>
+
+                        </li>
+                        <li class="btn-group nav-item">
+                            <a href="#" class="nav-link" data-toggle="dropdown" aria-expanded="false">
+                                <i class="nav-link-icon pe-7s-display2"> </i>Data Visualization
+                                <i class="fa fa-angle-down ml-2 opacity-5"></i>
+                            </a>
+
+                        </li>
+
+
+
+
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" data-placement="bottom" rel="popover-focus" data-offset="300"
+                                data-toggle="popover-custom" class="nav-link" data-original-title="" title="">
+                                <i class="nav-link-icon pe-7s-gift"> </i> Resource
+                                <i class="fa fa-angle-down ml-2 opacity-5"></i>
+                            </a>
+                            <div class="rm-max-width">
+                                <div class="d-none popover-custom-content">
+                                    <div class="dropdown-mega-menu">
+                                        <div class="grid-menu grid-menu-3col">
+                                            <div class="no-gutters row">
+                                                <div class="col-sm-6 col-xl-3">
+                                                    <ul class="nav flex-column">
+                                                        <li class="nav-item-header nav-item"> USAF Indicators and
+                                                            Technical Manual (pdf)</li>
+                                                        <li class="nav-item">
+                                                            <a href="javascript:void(0);" class="nav-link">
+                                                                <i class="nav-link-icon lnr-inbox"></i>
+                                                                <span> Contacts</span>
+                                                            </a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                                <div class="col-sm-6 col-xl-3">
+                                                    <ul class="nav flex-column">
+                                                        <li class="nav-item-header nav-item"> SCIAP City Metrics Report
+                                                            (pdf) </li>
+                                                        <li class="nav-item">
+                                                            <a href="javascript:void(0);" class="nav-link"> Bhopal </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="javascript:void(0);" class="nav-link"> Jaipur
+                                                                <!--<div class="ml-auto badge badge-success">New</div>-->
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="javascript:void(0);" class="nav-link">Mysore</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="javascript:void(0);"
+                                                                class="nav-link">Vijayawada</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="javascript:void(0);" class="nav-link">Guntur</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="col-sm-6 col-xl-3">
+                                                    <ul class="nav flex-column">
+                                                        <li class="nav-item-header nav-item"> City Profiles and
+                                                            Diagnostics (pdf links) </li>
+                                                        <li class="nav-item">
+                                                            <a href="javascript:void(0);" class="nav-link"> Bhopal </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="javascript:void(0);" class="nav-link"> Jaipur
+                                                                <!--<div class="ml-auto badge badge-success">New</div>-->
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="javascript:void(0);" class="nav-link">Mysore</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="javascript:void(0);"
+                                                                class="nav-link">Vijayawada</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="javascript:void(0);" class="nav-link">Guntur</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="col-sm-6 col-xl-3">
+                                                    <ul class="nav flex-column">
+                                                        <li class="nav-item-header nav-item"> Sustainable City
+                                                            Strategies (pdf links) </li>
+                                                        <li class="nav-item">
+                                                            <a href="javascript:void(0);" class="nav-link"> Bhopal </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="javascript:void(0);" class="nav-link"> Jaipur
+                                                                <!--<div class="ml-auto badge badge-success">New</div>-->
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="javascript:void(0);" class="nav-link">Mysore</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="javascript:void(0);"
+                                                                class="nav-link">Vijayawada</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="javascript:void(0);" class="nav-link">Guntur</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+
+                        <li class="dropdown nav-item">
+                            <a aria-haspopup="true" data-toggle="dropdown" class="nav-link" aria-expanded="false">
+                                <i class="nav-link-icon pe-7s-settings"></i> Support
+                                <i class="fa fa-angle-down ml-2 opacity-5"></i>
+                            </a>
+                            <div tabindex="-1" role="menu" aria-hidden="true"
+                                class="dropdown-menu-rounded dropdown-menu-lg rm-pointers dropdown-menu" style="">
+
+                                <button type="button" tabindex="0" class="dropdown-item">
+                                    <i class="dropdown-icon lnr-file-empty"></i>USAF Application Manual (pdf
+                                </button>
+                                <button type="button" tabindex="0" class="dropdown-item">
+                                    <i class="dropdown-icon lnr-file-empty"> </i>Contact us (form builder)
+                                </button>
+                                <button type="button" tabindex="0" class="dropdown-item">
+                                    <i class="dropdown-icon lnr-file-empty"> </i> Raise a query (form builder)
+                                </button>
+
+
+                            </div>
+                        </li>
+
+                        <li class="btn-group nav-item">
+                            <a href="#" class="nav-link" data-toggle="dropdown" aria-expanded="false">
+                                <i class="nav-link-icon pe-7s-display2"> </i>About USAF Tool
+                                <i class="fa fa-angle-down ml-2 opacity-5"></i>
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                            class="p-0 btn">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/11.jpg"
+                                                alt="">
+                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                        </a>
+                                        <div tabindex="-1" role="menu" aria-hidden="true"
+                                            class="dropdown-menu dropdown-menu-right">
+                                            <button type="button" tabindex="0" class="dropdown-item">User
+                                                Account</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                            <h6 tabindex="-1" class="dropdown-header">Header</h6>
+                                            <button type="button" tabindex="0" class="dropdown-item">Actions</button>
+                                            <div tabindex="-1" class="dropdown-divider"></div>
+                                            <button type="button" tabindex="0" class="dropdown-item">Dividers</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content-left  ml-3 header-user-info">
+                                    <div class="widget-heading">
+                                        Kamlesh Patel
+                                    </div>
+                                    <div class="widget-subheading">
+                                        Manager
+                                    </div>
+                                </div>
+                                <!--<div class="widget-content-right header-user-info ml-3">
+                                    <button type="button" class="btn-shadow p-1 btn btn-primary btn-sm show-toastr-example">
+                                        <i class="fa text-white fa-calendar pr-1 pl-1"></i>
+                                    </button>
+                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="app-main">
+            <div class="app-sidebar sidebar-shadow">
+                <div class="app-header__logo">
+                    <div class="logo-src"></div>
+                    <div class="header__pane ml-auto">
+                        <div>
+                            <button type="button" class="hamburger close-sidebar-btn hamburger--elastic"
+                                data-class="closed-sidebar">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="app-header__mobile-menu">
+                    <div>
+                        <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="app-header__menu">
+                    <span>
+                        <button type="button"
+                            class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                            <span class="btn-icon-wrapper">
+                                <i class="fa fa-ellipsis-v fa-w-6"></i>
+                            </span>
+                        </button>
+                    </span>
+                </div>
+
+                <div class="scrollbar-sidebar">
+                    <div class="app-sidebar__inner">
+                        <ul class="vertical-nav-menu">
+                            <li class="app-sidebar__heading"> 1.USAF Dashboard </li>
+
+                            <li class="mm-active">
+                                <a href="#" aria-expanded="true">
+                                    <i class="metismenu-icon pe-7s-browser"></i> Demography
+                                    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" aria-expanded="true">
+                                    <i class="metismenu-icon pe-7s-browser"></i> Sectors and Indicators
+                                    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                </a>
+
+                                <ul class="mm-collapse  " style="">
+                                    <li>
+                                        <a href="#">
+                                            <i class="metismenu-icon"></i> Urban Form, Public Space and Safety
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="metismenu-icon"></i> Housing and Property
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="metismenu-icon"></i> Water
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="metismenu-icon"></i> Sanitation
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="metismenu-icon"></i> Solid Waste Management
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="metismenu-icon"></i> Transportation
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="metismenu-icon"></i> Social Facilities and Services
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="metismenu-icon"></i> Environment and Ecology
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="metismenu-icon"></i> Clean Energy
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="metismenu-icon"></i> Disaster Risk Management
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="metismenu-icon"></i> Governance and Data Management
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="metismenu-icon"></i> Finance and Economy
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+
+
+                            <li class="app-sidebar__heading"> 2. City Scoring and Reporting </li>
+                            <li>
+                                <a href="dashboard-boxes.html">
+                                    <i class="metismenu-icon pe-7s-display2"></i>
+                                    All Sectors Report
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dashboard-boxes.html">
+                                    <i class="metismenu-icon pe-7s-display2"></i>
+                                    Customised Report
+                                </a>
+                            </li>
+
+                            <li class="app-sidebar__heading">3. Data Visualisation</li>
+                            <li>
+                                <a href="#">
+                                    <i class="metismenu-icon pe-7s-mouse">
+                                    </i> All Sectors
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="metismenu-icon pe-7s-mouse">
+                                    </i> Customised Charts
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="app-main__outer">
+                
+                <div class="app-main__inner">
+                    <div class="app-page-title">
+                        <div class="page-title-wrapper">
+                            <div class="page-title-heading">
+                                <div class="page-title-icon">
+                                    <i class="pe-7s-monitor icon-gradient bg-mean-fruit">
+                                    </i>
+                                </div>
+                                <div> Demography
+                                    <div class="page-title-subheading">Demography
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="page-title-actions">
+                                <!--<button type="button" data-toggle="tooltip" title="Example Tooltip" data-placement="bottom" class="btn-shadow mr-3 btn btn-dark">
+                                        <i class="fa fa-star"></i>
+                                    </button>
+                                   <div class="d-inline-block dropdown">
+                                        <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn-shadow dropdown-toggle btn btn-info">
+                                            <span class="btn-icon-wrapper pr-2 opacity-7">
+                                                <i class="fa fa-business-time fa-w-20"></i>
+                                            </span>
+                                            Buttons
+                                        </button>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <ul class="nav flex-column">
+                                                <li class="nav-item">
+                                                    <a href="javascript:void(0);" class="nav-link">
+                                                        <i class="nav-link-icon lnr-inbox"></i>
+                                                        <span>
+                                                            Inbox
+                                                        </span>
+                                                        <div class="ml-auto badge badge-pill badge-secondary">86</div>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="javascript:void(0);" class="nav-link">
+                                                        <i class="nav-link-icon lnr-book"></i>
+                                                        <span>
+                                                            Book
+                                                        </span>
+                                                        <div class="ml-auto badge badge-pill badge-danger">5</div>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="javascript:void(0);" class="nav-link">
+                                                        <i class="nav-link-icon lnr-picture"></i>
+                                                        <span>
+                                                            Picture
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a disabled href="javascript:void(0);" class="nav-link disabled">
+                                                        <i class="nav-link-icon lnr-file-empty"></i>
+                                                        <span>
+                                                            File Disabled
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+									-->
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="app-inner-layout__wrapper">
+
+
+                        <div class="mb-3 card">
+                            <div class="card-header-tab card-header">
+                                <div class="card-header-title font-size-lg text-capitalize font-weight-normal">
+                                    <i class="header-icon lnr-charts icon-gradient bg-happy-green"> </i>
+                                    <h4>Module 1 Indicators and Data inputs – Urban Form, Public Space and Safety</h4>
+                                </div>
+                                <div class="btn-actions-pane-right text-capitalize">
+                                    <button class="btn-wide btn-outline-2x mr-md-2 btn btn-outline-focus btn-sm">GENERAL
+                                        SAVE</button>
+                                </div>
+                            </div>
+
+                            <div class="no-gutters">
+                                <div class="row  m-2">
+                                    <div class="col-md-4">
+                                        <label> <b>Select City </b></label>
+                                        <select type="select" id="exampleCustomSelect" name="customSelect"
+                                            class="custom-select">
+                                            <option value="">Select</option>
+                                            <option>Bhopal</option>
+                                            <option>Jaipur</option>
+                                            <option>Mysore</option>
+                                            <option>Vijayawada</option>
+                                            <option>Guntur</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label> <b>Select Year </b> </label>
+                                        <select type="select" id="exampleCustomSelect" name="customSelect"
+                                            class="custom-select">
+                                            <option value="">2021</option>
+                                            <option>2020</option>
+                                            <option>2019</option>
+                                            <option>2018</option>
+                                            <option>2017</option>
+                                            <option>2016</option>
+                                        </select>
+                                    </div>
+
+
+                                </div>
+
+
+
+
+                                <div id="accordion" class="accordion-wrapper  ">
+
+                                    <div class="card ">
+                                        <div id="headingOne" class="card-header">
+                                            <button type="button" data-toggle="collapse" data-target="#collapseOne1"
+                                                aria-expanded="false" aria-controls="collapseOne"
+                                                class="text-left m-0 p-0 btn btn-link btn-block collapsed">
+                                                <h5 class="m-0 p-0"> <i class="fa fa-angle-down rotate-icon"> </i>
+                                                    Indicator 1.1. Percentage of city roads covered with street lighting
+                                                    (%) – Primary/ Non-spatial</h5>
+                                            </button>
+                                        </div>
+                                        <div data-parent="#accordion" id="collapseOne1" aria-labelledby="headingOne"
+                                            class="collapse" style="">
+                                            <div class="card-body ">
+
+                                                <div class="table-responsive">
+
+                                                    <table class="table table-padded table-striped table-xl mb-0  ">
+                                                        <thead class="bg-danger text-white">
+                                                            <tr>
+                                                                <th width="50%">Description</th>
+                                                                <th width="20%">Response</th>
+                                                                <th width="25%">Remarks</th>
+                                                                <th width="5%"> Document</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody class="tbody">
+
+                                                            <tr class="">
+                                                                <td>1.1. Length of roads in the ULB covered by
+                                                                    streetlights
+                                                                    <span data-tip="Approved" class="green">
+                                                                        <i class="ft-check-square 2x success"></i>
+                                                                    </span> 
+                                                                </td>
+                                                                <td>
+                                                                    <input type="text" name="" class="form-control" />
+                                                                </td>
+
+                                                                <td>
+                                                                    <input type="text" name="" class="form-control" />
+                                                                </td>
+                                                                <td>
+                                                                    <input type="file" name="" />
+                                                                </td>
+
+                                                            </tr>
+
+                                                            <tr class="">
+                                                                <td>1.2. Total length of road in the ULB
+                                                                    <span data-tip="Approved" class="green">
+                                                                        <i class="ft-check-square 2x success"></i>
+                                                                    </span> 
+                                                                </td>
+                                                                <td>
+                                                                    <input type="text" name="" class="form-control" />
+                                                                </td>
+
+                                                                <td>
+                                                                    <input type="text" name="" class="form-control" />
+                                                                </td>
+                                                                <td>
+                                                                    <input type="file" name="" />
+                                                                </td>
+
+                                                            </tr>
+
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+
+
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div id="headingTwo" class="b-radius-0 card-header">
+                                            <button type="button" data-toggle="collapse" data-target="#collapseOne2"
+                                                aria-expanded="false" aria-controls="collapseTwo"
+                                                class="text-left m-0 p-0 btn btn-link btn-block">
+                                                <h5 class="m-0 p-0"><i class="fa fa-angle-down rotate-icon"> </i>
+                                                    Indicator 1.2. Percentage change in the built-up area per capita in
+                                                    the city in between year 2000 and year 2014 (%) – Primary/ Spatial
+                                                </h5>
+                                            </button>
+                                        </div>
+                                        <div data-parent="#accordion" id="collapseOne2" class="collapse">
+                                            <div class="card-body">
+
+                                                <div class="table-responsive">
+
+                                                    <table class="table table-padded table-striped table-xl mb-0  ">
+                                                        <thead class="bg-danger text-white">
+                                                            <tr>
+                                                                <th width="50%">Description</th>
+                                                                <th width="20%">Response</th>
+                                                                <th width="25%">Remarks</th>
+                                                                <th width="5%"> Document</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody class="tbody">
+
+                                                            <tr class="">
+                                                                <td>1.6. Built-up area of the city in year 2000
+                                                                    <span data-tip="Approved" class="green">
+                                                                        <i class="ft-check-square 2x success"></i>
+                                                                    </span> 
+                                                                </td>
+                                                                <td>
+                                                                    <input type="text" name="" class="form-control" />
+                                                                </td>
+
+                                                                <td>
+                                                                    <input type="text" name="" class="form-control" />
+                                                                </td>
+                                                                <td>
+                                                                    <input type="file" name="" />
+                                                                </td>
+
+                                                            </tr>
+
+                                                            <tr class="">
+                                                                <td> 1.7. Population of the city in year 2000
+                                                                    <span data-tip="Approved" class="green">
+                                                                        <i class="ft-check-square 2x success"></i>
+                                                                    </span> 
+                                                                </td>
+                                                                <td>
+                                                                    <input type="text" name="" class="form-control" />
+                                                                </td>
+
+                                                                <td>
+                                                                    <input type="text" name="" class="form-control" />
+                                                                </td>
+                                                                <td>
+                                                                    <input type="file" name="" />
+                                                                </td>
+
+                                                            </tr>
+
+                                                            <tr class="">
+                                                                <td>1.8. Built-up area of the city in year 2014
+                                                                    <span data-tip="Approved" class="green">
+                                                                        <i class="ft-check-square 2x success"></i>
+                                                                    </span> 
+                                                                </td>
+                                                                <td>
+                                                                    <input type="text" name="" class="form-control" />
+                                                                </td>
+
+                                                                <td>
+                                                                    <input type="text" name="" class="form-control" />
+                                                                </td>
+                                                                <td>
+                                                                    <input type="file" name="" />
+                                                                </td>
+
+                                                            </tr>
+
+
+                                                            <tr class="">
+                                                                <td>1.9. Population of the city in year 2014
+                                                                    <span data-tip="Approved" class="green">
+                                                                        <i class="ft-check-square 2x success"></i>
+                                                                    </span> 
+                                                                </td>
+                                                                <td>
+                                                                    <input type="text" name="" class="form-control" />
+                                                                </td>
+
+                                                                <td>
+                                                                    <input type="text" name="" class="form-control" />
+                                                                </td>
+                                                                <td>
+                                                                    <input type="file" name="" />
+                                                                </td>
+
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="card">
+                                        <div id="headingThree" class="card-header">
+                                            <button type="button" data-toggle="collapse" data-target="#collapseOne3"
+                                                aria-expanded="false" aria-controls="collapseThree"
+                                                class="text-left m-0 p-0 btn btn-link btn-block">
+                                                <h5 class="m-0 p-0"><i class="fa fa-angle-down rotate-icon"> </i>
+                                                    Indicator 1.3. Percentage of agriculture use area proposed for
+                                                    future developable uses in the Master Development Plan (%) –
+                                                    Primary/ Non-spatial</h5>
+                                            </button>
+                                        </div>
+                                        <div data-parent="#accordion" id="collapseOne3" class="collapse">
+                                            <div class="card-body">
+
+                                                <div class="table-responsive">
+
+                                                    <table class="table table-padded table-striped table-xl mb-0  ">
+                                                        <thead class="bg-danger text-white">
+                                                            <tr>
+                                                                <th width="50%">Description</th>
+                                                                <th width="20%">Response</th>
+                                                                <th width="25%">Remarks</th>
+                                                                <th width="5%"> Document</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody class="tbody">
+
+                                                            <tr class="">
+                                                                <td>1.10. Area under agriculture use as per the existing
+                                                                    land use plan
+                                                                    <span data-tip="Approved" class="green">
+                                                                        <i class="ft-check-square 2x success"></i>
+                                                                    </span> 
+                                                                </td>
+                                                                <td>
+                                                                    <input type="text" name="" class="form-control" />
+                                                                </td>
+
+                                                                <td>
+                                                                    <input type="text" name="" class="form-control" />
+                                                                </td>
+                                                                <td>
+                                                                    <input type="file" name="" />
+                                                                </td>
+
+                                                            </tr>
+
+                                                            <tr class="">
+                                                                <td>1.11. Area under agriculture use in the proposed
+                                                                    land use plan
+                                                                    <span data-tip="Approved" class="green">
+                                                                        <i class="ft-check-square 2x success"></i>
+                                                                    </span> 
+                                                                </td>
+                                                                <td>
+                                                                    <input type="text" name="" class="form-control" />
+                                                                </td>
+
+                                                                <td>
+                                                                    <input type="text" name="" class="form-control" />
+                                                                </td>
+                                                                <td>
+                                                                    <input type="file" name="" />
+                                                                </td>
+
+                                                            </tr>
+
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="card">
+                                        <div id="headingfour" class="card-header">
+                                            <button type="button" data-toggle="collapse" data-target="#collapseOne4"
+                                                aria-expanded="false" aria-controls="collapsefour"
+                                                class="text-left m-0 p-0 btn btn-link btn-block">
+                                                <h5 class="m-0 p-0"> <i class="fa fa-angle-down rotate-icon"> </i>
+                                                    Indicator 1.4. Percentage of population within 500m distance to
+                                                    public park/open space (%)– Primary/ Spatial</h5>
+                                            </button>
+                                        </div>
+                                        <div data-parent="#accordion" id="collapseOne4" class="collapse">
+                                            <div class="card-body">
+
+                                                <div class="table-responsive">
+
+                                                    <table class="table table-padded table-striped table-xl mb-0  ">
+                                                        <thead class="bg-danger text-white">
+                                                            <tr>
+                                                                <th width="50%">Description</th>
+                                                                <th width="25%">Response</th>
+                                                                <th width="25%">Remarks</th>
+                                                                <th width="5%"> Document</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody class="tbody">
+
+                                                            <tr class="">
+                                                                <td>1.15. Population residing within a distance of 500 m
+                                                                    from the nearest park, public open space
+                                                                    <span data-tip="Approved" class="green">
+                                                                        <i class="ft-check-square 2x success"></i>
+                                                                    </span> 
+                                                                </td>
+                                                                <td>
+                                                                    <input type="text" name="" class="form-control" />
+                                                                </td>
+
+                                                                <td>
+                                                                    <input type="text" name="" class="form-control" />
+                                                                </td>
+                                                                <td>
+                                                                    <input type="file" name="" />
+                                                                </td>
+
+                                                            </tr>
+
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="card">
+                                        <div id="headingThree" class="card-header">
+                                            <button type="button" data-toggle="collapse" data-target="#collapseOne5"
+                                                aria-expanded="false" aria-controls="collapseThree"
+                                                class="text-left m-0 p-0 btn btn-link btn-block">
+                                                <h5 class="m-0 p-0"> <i class="fa fa-angle-down rotate-icon"> </i>
+                                                    Indicator 1.5. Open space (includes recreational space, organised
+                                                    green, other common open spaces) per capita (sqm/person)– Primary/
+                                                    Non-spatial</h5>
+                                            </button>
+                                        </div>
+                                        <div data-parent="#accordion" id="collapseOne5" class="collapse">
+                                            <div class="card-body">
+
+                                                <div class="table-responsive">
+
+                                                    <table class="table table-padded table-striped table-xl mb-0  ">
+                                                        <thead class="bg-danger text-white">
+                                                            <tr>
+                                                                <th width="50%">Description</th>
+                                                                <th width="25%">Response</th>
+                                                                <th width="25%">Remarks</th>
+                                                                <th width="5%"> Document</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody class="tbody">
+
+                                                            <tr class="">
+                                                                <td>Total area under open spaces (includes recreational
+                                                                    space, organised green, other common open spaces
+                                                                    such as vacant lands/ open spaces including flood
+                                                                    plains, forest cover etc. in plain areas.) in the
+                                                                    city
+                                                                    <span data-tip="Approved" class="green">
+                                                                        <i class="ft-check-square 2x success"></i>
+                                                                    </span> 
+                                                                </td>
+                                                                <td>
+                                                                    <input type="text" name="" class="form-control" />
+                                                                </td>
+
+                                                                <td>
+                                                                    <input type="text" name="" class="form-control" />
+                                                                </td>
+                                                                <td>
+                                                                    <input type="file" name="" />
+                                                                </td>
+
+                                                            </tr>
+
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="card">
+                                        <div id="headingThree" class="card-header">
+                                            <button type="button" data-toggle="collapse" data-target="#collapseOne6"
+                                                aria-expanded="false" aria-controls="collapseThree"
+                                                class="text-left m-0 p-0 btn btn-link btn-block">
+                                                <h5 class="m-0 p-0"><i class="fa fa-angle-down rotate-icon"> </i>
+                                                    Indicator 1.6. Percentage share of pedestrian fatalities in total
+                                                    fatalities (motorized/non-motorized transport) in road accident
+                                                    during a year (%) – Secondary/ Non-spatial</h5>
+                                            </button>
+                                        </div>
+                                        <div data-parent="#accordion" id="collapseOne6" class="collapse">
+                                            <div class="card-body">
+
+
+                                                <div class="table-responsive">
+
+                                                    <table class="table table-padded table-striped table-xl mb-0  ">
+                                                        <thead class="bg-danger text-white">
+                                                            <tr>
+                                                                <th width="50%">Description</th>
+                                                                <th width="25%">Response</th>
+                                                                <th width="25%">Remarks</th>
+                                                                <th width="5%"> Document</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody class="tbody">
+
+                                                            <tr class="">
+                                                                <td>1.3. Total number of fatalities recorded in road
+                                                                    accidents within the city
+                                                                    <span data-tip="Approved" class="green">
+                                                                        <i class="ft-check-square 2x success"></i>
+                                                                    </span> 
+                                                                </td>
+                                                                <td>
+                                                                    <input type="text" name="" class="form-control" />
+                                                                </td>
+
+                                                                <td>
+                                                                    <input type="text" name="" class="form-control" />
+                                                                </td>
+                                                                <td>
+                                                                    <input type="file" name="" />
+                                                                </td>
+
+                                                            </tr>
+
+
+                                                            <tr class="">
+                                                                <td>1.4. Total number of fatalities where pedestrians
+                                                                    were involved in road accidents in the city
+                                                                    <span data-tip="Approved" class="green">
+                                                                        <i class="ft-check-square 2x success"></i>
+                                                                    </span> 
+                                                                </td>
+                                                                <td>
+                                                                    <input type="text" name="" class="form-control" />
+                                                                </td>
+
+                                                                <td>
+                                                                    <input type="text" name="" class="form-control" />
+                                                                </td>
+                                                                <td>
+                                                                    <input type="file" name="" />
+                                                                </td>
+
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="card">
+                                        <div id="headingThree" class="card-header">
+                                            <button type="button" data-toggle="collapse" data-target="#collapseOne7"
+                                                aria-expanded="false" aria-controls="collapseThree"
+                                                class="text-left m-0 p-0 btn btn-link btn-block">
+                                                <h5 class="m-0 p-0"><i class="fa fa-angle-down rotate-icon"> </i>
+                                                    Indicator 1.7. Percentage of recreational and open space (includes
+                                                    stadiums, theme parks, playgrounds, maidan) of total developable
+                                                    area (%) – Secondary/ Non-spatial</h5>
+                                            </button>
+                                        </div>
+                                        <div data-parent="#accordion" id="collapseOne7" class="collapse">
+                                            <div class="card-body">
+
+
+                                                <div class="table-responsive">
+
+                                                    <table class="table table-padded table-striped table-xl mb-0  ">
+                                                        <thead class="bg-danger text-white">
+                                                            <tr>
+                                                                <th width="50%">Description</th>
+                                                                <th width="25%">Response</th>
+                                                                <th width="25%">Remarks</th>
+                                                                <th width="5%"> Document</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody class="tbody">
+
+                                                            <tr class="">
+                                                                <td>1.12. Total developable area in the city
+                                                                    <span data-tip="Approved" class="green">
+                                                                        <i class="ft-check-square 2x success"></i>
+                                                                    </span> 
+                                                                </td>
+
+                                                                <td>
+                                                                    <input type="text" name="" class="form-control" />
+                                                                </td>
+                                                                <td>
+                                                                    <input type="text" name="" class="form-control" />
+                                                                </td>
+                                                                <td>
+                                                                    <input type="file" name="" />
+                                                                </td>
+
+                                                            </tr>
+
+
+                                                            <tr class="">
+                                                                <td>1.14. Area under parks and open space use in the
+                                                                    city
+                                                                    <span data-tip="Approved" class="green">
+                                                                        <i class="ft-check-square 2x success"></i>
+                                                                    </span> 
+                                                                </td>
+                                                                <td>
+                                                                    <input type="text" name="" class="form-control" />
+                                                                </td>
+
+                                                                <td>
+                                                                    <input type="text" name="" class="form-control" />
+                                                                </td>
+                                                                <td>
+                                                                    <input type="file" name="" />
+                                                                </td>
+
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div id="headingThree" class="card-header">
+                                            <button type="button" data-toggle="collapse" data-target="#collapseOne8"
+                                                aria-expanded="false" aria-controls="collapseThree"
+                                                class="text-left m-0 p-0 btn btn-link btn-block">
+                                                <h5 class="m-0 p-0"><i class="fa fa-angle-down rotate-icon"> </i>
+                                                    Indicator 1.8. Rating of safety standards of the city
+                                                    (Poor/Fair/Good) – Tertiary/ Non-spatial</h5>
+                                            </button>
+                                        </div>
+                                        <div data-parent="#accordion" id="collapseOne8" class="collapse">
+                                            <div class="card-body">
+
+                                                <div class="table-responsive">
+
+                                                    <table class="table table-padded table-striped table-xl mb-0  ">
+                                                        <thead class="bg-danger text-white">
+                                                            <tr>
+                                                                <th width="50%">Description</th>
+                                                                <th width="25%">Response</th>
+                                                                <th width="25%">Remarks</th>
+                                                                <th width="5%"> Document</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody class="tbody">
+
+                                                            <tr class="">
+                                                                <td>1.5. Rating of safety standards of the city
+                                                                    <span data-tip="Approved" class="green">
+                                                                        <i class="ft-check-square 2x success"></i>
+                                                                    </span> 
+                                                                </td>
+
+                                                                <td>
+                                                                    <select class="form-control" name="">
+                                                                        <option>Poor</option>
+                                                                        <option>Fair</option>
+                                                                        <option>Good</option>
+                                                                    </select>
+                                                                </td>
+
+
+                                                                <td>
+                                                                    <input type="text" name="" class="form-control" />
+                                                                </td>
+                                                                <td>
+                                                                    <input type="file" name="" />
+                                                                </td>
+
+                                                            </tr>
+
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div id="headingThree" class="card-header">
+                                            <button type="button" data-toggle="collapse" data-target="#collapseOne9"
+                                                aria-expanded="false" aria-controls="collapseThree"
+                                                class="text-left m-0 p-0 btn btn-link btn-block">
+                                                <h5 class="m-0 p-0"><i class="fa fa-angle-down rotate-icon"> </i>
+                                                    Indicator 1.9. Amount spent in operations and maintenance per square
+                                                    metre area of parks in the city by the ULB (INR per sqm) – Tertiary/
+                                                    Non-spatial</h5>
+                                            </button>
+                                        </div>
+                                        <div data-parent="#accordion" id="collapseOne9" class="collapse">
+                                            <div class="card-body">
+
+                                                <div class="table-responsive">
+
+                                                    <table class="table table-padded table-striped table-xl mb-0  ">
+                                                        <thead class="bg-danger text-white">
+                                                            <tr>
+                                                                <th width="50%">Description</th>
+                                                                <th width="25%">Response</th>
+                                                                <th width="25%">Remarks</th>
+                                                                <th width="5%"> Document</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody class="tbody">
+
+                                                            <tr class="">
+                                                                <td>1.16. Total expenditure made by the ULB in a
+                                                                    financial year towards operation and maintenance of
+                                                                    parks in the city
+                                                                    <span data-tip="Approved" class="green">
+                                                                        <i class="ft-check-square 2x success"></i>
+                                                                    </span> 
+                                                                </td>
+                                                                <td>
+                                                                    <input type="text" name="" class="form-control" />
+                                                                </td>
+
+                                                                <td>
+                                                                    <input type="text" name="" class="form-control" />
+                                                                </td>
+                                                                <td>
+                                                                    <input type="file" name="" />
+                                                                </td>
+
+                                                            </tr>
+
+
+                                                            <tr class="">
+                                                                <td>1.17. Total area under parks in the city
+                                                                    <span data-tip="Approved" class="green">
+                                                                        <i class="ft-check-square 2x success"></i>
+                                                                    </span> 
+                                                                </td>
+                                                                <td>
+                                                                    <input type="text" name="" class="form-control" />
+                                                                </td>
+
+                                                                <td>
+                                                                    <input type="text" name="" class="form-control" />
+                                                                </td>
+                                                                <td>
+                                                                    <input type="file" name="" />
+                                                                </td>
+
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                            <div class="text-center d-block p-3 card-footer">
+                                <button class="btn-pill btn-shadow btn-wide fsize-1 btn btn-primary btn-lg">
+                                    <span class="mr-1">Submit</span>
+                                </button>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+                <div class="app-wrapper-footer">
+                    <div class="app-footer">
+                        <div class="app-footer__inner">
+                            <div class="app-footer-left">
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <a href="javascript:void(0);" class="nav-link">
+                                            Footer Link 1
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="javascript:void(0);" class="nav-link">
+                                            Footer Link 2
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="app-footer-right">
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <a href="javascript:void(0);" class="nav-link">
+                                            Footer Link 3
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="javascript:void(0);" class="nav-link">
+                                            <div class="badge badge-success mr-1 ml-0">
+                                                <small>NEW</small>
+                                            </div>
+                                            Footer Link 4
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+    <script type="text/javascript" src="./assets/scripts/main.js"></script>
+</body>
+
+</html>
